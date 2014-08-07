@@ -25,6 +25,9 @@ debug = true
 login_username = examplename
 login_pw = examplepassword
 threads = auto
+#; calculate size in bytes, this will affect all PUT/POST/PATCH, e.g. 1048576 = 1 * 1024 * 1024 = 1 megabyte * 1024^2
+upload_size_limit = 1048576
+upload_folder = uploads
 
 [Task Parameters]
 experiment_code_version = 1.0

@@ -62,6 +62,9 @@ app = Flask("Experiment_Server")
 # Set cache timeout to 10ms for static files
 app.config.update(SEND_FILE_MAX_AGE_DEFAULT=10)
 
+# Set upload size limits
+app.config['MAX_CONTENT_LENGTH'] = CONFIG.getint('Server Parameters', 'upload_size_limit')]
+
 
 # Serving warm, fresh, & sweet custom, user-provided routes
 # ==========================================================
